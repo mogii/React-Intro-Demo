@@ -30,7 +30,7 @@ var Link = React.createClass({
   }
 });
 
-var Meetup = React.createClass({
+var Talk = React.createClass({
   render: function () {
     return (
       <div>
@@ -50,18 +50,18 @@ var Meetup = React.createClass({
   }
 });
 
-var Meetups = React.createClass({
+var Body = React.createClass({
   render: function() {
     return (
       <div className="meetups">
-        <Meetup
+        <Talk
           dateTime="Tue March 8th @ 6:45pm"
           location="2611 Internet Blvd, Suite 120, Frisco, TX"
           mapLink="https://www.google.com/maps?f=q&hl=en&q=2611+Internet+Blvd,+Suite+120,+Frisco,+TX,+us"
           topic="Introduction to React"
           by="Morry Kang, Software Engineer"
         />
-        <Meetup
+        <Talk
           dateTime="Tue April 12th @ 6:45pm"
           location="2611 Internet Blvd, Suite 120, Frisco, TX"
           mapLink="https://www.google.com/maps?f=q&hl=en&q=2611+Internet+Blvd,+Suite+120,+Frisco,+TX,+us"
@@ -92,7 +92,7 @@ var Note = React.createClass({
 ReactDOM.render(
     <div>
       <Header />
-      <Meetups />
+      <Body />
       <Note />
     </div>,
     document.getElementById('content')
